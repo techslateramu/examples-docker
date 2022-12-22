@@ -1,25 +1,27 @@
 # **Setup Sonarqube with Postgres database using docker-compose**
 
 # Table of contents
-[Introduction](#**<Introduction>**)
-[Prerequisites](#**<Pre-requisites>**)
-[Setup SonarQube Server with Docker-compose](#how-to-setup-sonarqube-server-with-docker-compose)
+1.[Introduction](#**<Introduction>**)
+
+2.[Prerequisites](#**<Pre-requisites>**)
+
+3.[Setup SonarQube Server with Docker-compose](#how-to-setup-sonarqube-server-with-docker-compose)
 
 
-## **<Introduction>**
+## **Introduction**
 
-### **<What is SonarQube?>**
+### **What is SonarQube?**
 SonarQube is a continuous inspection tool which can be used to test the quality of the code. It analyzes the source code and sends the analytical report to us to check on the final quality. 
 
 It is available as an open-source platform and supports multiple programming languages like Java, Python, Javascript, TypeScript, COBOL, HTML, XML, C#, C/C++ Apex, Object-C, Swift, Kotlin, Ruby, Scala, CSS, ABAP etc. However, some languages require a commercial license to work with. 
 
 You do not have to alter your workflow or learn new tools to install SonarQube since it can easily be integrated with common build tools such as Ant, Maven, Make, Gradle, MS Build etc. All you have to do is add appropriate plugins for a smoother analysis in your build process. 
 
-### **<What is Docker Compose?>** 
+### **What is Docker Compose?** 
 Docker compose is a tool developed to define and share multi-container applications. With docker compose, you can create a YAML file for defining services within a single command. This command can either build up or tear down your entire build. 
+***
 
-
-# **<Pre-requisites>**
+## **Pre-requisites**
 
 **To set up SonarQube with a Postgres database using docker-compose, you will need to have the following prerequisites installed and configured on your machine:**
 
@@ -44,23 +46,26 @@ if you are a Linux user, Please run the following command in terminal.
 
 **```sudo sysctl -w vm.max_map_count=262144```**
 
-# **<How to Setup SonarQube Server with Docker-compose?>**
+***
+# **How to Setup SonarQube Server with Docker-compose?**
 Now, We will create a simple **docker-compose.yml** file and store the code in it.
 
-### 1. Open your Visual Studio Code.
-![Visual studio page](C:\Techslate\vs code page.png)
+### **1. Open your Visual Studio Code.**
+![Visual studio page](images/vscodepage.png)
+***
 
-### 2. Create a folder , and name it by your choice.
+### **2. Create a folder , and name it by your choice.**
 **To create a Folder run the following command**
 
 ```mkdir <folder-name>``` 
 
-![Create a Folder](C:\Techslate\open folder.png)
+![Create a Folder](images/openfolder.png)
+***
 
-### 3. Create docker-compose.yml .
+### **3. Create docker-compose.yml .**
 
-```version: '3.7'
-
+```
+version: '3.7'
 services:
   sonarqube:
     image: sonarqube:latest
@@ -94,38 +99,41 @@ volumes:
   sonarqube_bundled-plugins:
   postgres_data:
   ```
+***
+### **4. Now execute the compose file using Docker compose command:**
 
-### 4. Now execute the compose file using Docker compose command:
+**`docker-compose up -d`**
 
-```docker-compose up -d```
-
-![docker-compose up](C:\Techslate\docker-compose up.png)
-
-### 5. List the running containers 
+![docker-compose up](images/docker-composeup.png)
+***
+### **5. List the running containers.** 
 
 docker ps command to list the running containers, as we can see both SonarQube and postgreSQL containers are running.
 
-```docker ps```
+**`docker ps`**
 
-![docker ps](C:\Techslate\docker ps.png)
+![docker ps](images/dockerps.png)
+***
+### **6. Command to check the docker compose logs .**
 
-### 6. Command to check the docker compose logs
+**`docker-compose logs`**
 
-```docker-compose logs```
-
-![docker-compose logs] (C:\Techslate\logs.png)
+![docker-compose logs](images\logs.png)
 
 **Now open in your browser http://localhost:9000 and login to our default admin account.**
+***
+### **7. Use the default credentials admin:admin to login.**
 
-### 7. Use the default credentials admin:admin to login.
+![Sonar Login](images\Sonarlogin.png)
+***
 
-![Sonar Login](C:\Techslate\Sonar login.png)
+**We have successfully built a SonarQube server.**
 
-We have successfully built a SonarQube server.
+**Useful Links to guide you better:**
 
-Useful Links to guide you better:
+**SonarQube on Docker Hub: https://docs.SonarQube.org/latest/setup/install-server/**
 
-SonarQube on Docker Hub: https://docs.SonarQube.org/latest/setup/install-server/
+**PostgreSQL on Docker Hub: https://hub.docker.com/r/bitnami/SonarQube/**
 
-PostgreSQL on Docker Hub: https://hub.docker.com/r/bitnami/SonarQube/
+
 
