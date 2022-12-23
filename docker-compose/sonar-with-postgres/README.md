@@ -73,7 +73,6 @@ services:
       - 9000:9000
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
-      
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
     volumes:
@@ -81,7 +80,6 @@ services:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
-    command: ["./bin/run.sh"]
 
   db:
     image: postgres:latest
