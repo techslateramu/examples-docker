@@ -125,7 +125,7 @@ docker ps command to list the running containers, as we can see both SonarQube a
 ### **7. Use the default credentials admin:admin to login.**
 
 ![Sonar Login](images\Sonarlogin.png)
-***
+
 
 **We have successfully built a SonarQube server.**
 
@@ -135,5 +135,85 @@ docker ps command to list the running containers, as we can see both SonarQube a
 
 **PostgreSQL on Docker Hub: https://hub.docker.com/r/bitnami/SonarQube/**
 
+***
+
+# **Connecting DBeaver PostgreSQL via JDBC Driver:**
+
+You can easily connect your PostgreSQL data to your DBeaver Database Tool in order to optimize your PostgreSQL management in the Cloud. 
+To establish the DBeaver PostgreSQL connection, you’ll need to download the PostgreSQL JDBC Driver. The integration process is pretty much straightforward and doesn’t require any programming experience. For the purposes of this demonstration, the Community Edition of DBeaver is used to retrieve data from PostgreSQL via the PostgreSQL JDBC Driver.
+
+**Follow the below-mentioned steps to establish the DBeaver PostgreSQL connection.**
+* [Step 1: Install DBeaver Community Edition](#install-dbeaver-community-edition)
+* [Step 2: Download PostgreSQL JDBC Driver]
+* [Step 3: Create a Connection to PostgreSQL Data]
+* [Step 4: Query Data]
+
+## **Install DBeaver Community Edition**
 
 
+### 
+* **You can download the relevant DBeaver Community Edition based on your Operating System from its official website (https://dbeaver.io/download/).**
+
+![dbeaver](images/dbeaver.png)
+
+### 
+* **Once downloaded, you can open and run the installer. A Setup Wizard will now be displayed on your screen, kind of things that you already know. Just click on _“Next”_.**
+
+![dbeaver](images/next.png)
+
+### 
+* **Select a location for the installation and proceed ahead with the installation. Once the installation finishes, click on the “Finish” button to complete the installation process.**
+
+![dbeaver](images/finish.png)
+
+
+## **Download PostgreSQL JDBC Driver**
+###
+* **You can download the recent version of PostgreSQL JDBC Driver from PostgreSQL’s official website (https://jdbc.postgresql.org/download/).**
+
+![dbeaver](images/JDBC.png)
+###
+* **Just click on the version of the Driver that you want to download, and it will be downloaded automatically on your local system.**
+
+---
+
+## **Create a Connection to PostgreSQL Data**
+###
+* **This brings us to the main part of the DBeaver PostgreSQL connection. Launch your DBeaver application and click on the “Database” button located above the toolbar. Then, click on “New Database Connection”.**
+
+![dbeaver](images/newconnection.png)
+
+###
+* **It will now prompt you to select the Database you want to connect to. Select PostgreSQL and click on “Next”.**
+
+![dbeaver](images/postgres.png)
+
+###
+* **The “Connection Settings” tab will open up and it will by default pick up the details of your system/host (the default port is 5432). Specify the Database properties, and feed in the correct password of the Postgres Database User.**
+
+![dbeaver](images/connection.png)
+###
+* **Now, click on “Edit Driver Settings”.**
+###
+* **Click on the “Add File” button to add the .jar file of the PostgreSQL JDBC Driver downloaded in the previous step. Locate the postgresql.jar file in the installation directory and click on “OK”.**
+
+![dbeaver](images/addfile.png)
+
+###
+* **If you are prompted about the missing Drivers, click on “Download”. You can then verify the connection by clicking on “Test Connection”.**
+###
+* **If it displays the “Connected” message, click on “Finish”.**
+
+![dbeaver](images/connected.png)
+
+###
+* **You can now see your Database added to the list.**
+
+## Query Data
+###
+* **Now that you’ve successfully connected PostgreSQL DBeaver, you can view and manipulate the Postgres data in a table. Just right-click on the specific table and click on “View Data”. The content of the table will then be displayed in the main workspace.**
+
+![dbeaver](images/viewdata.png)
+
+###
+* **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
