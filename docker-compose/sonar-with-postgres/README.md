@@ -127,7 +127,7 @@ docker ps command to list the running containers, as we can see both SonarQube a
 ![Sonar Login](images\Sonarlogin.png)
 
 
-**We have successfully built a SonarQube server.**
+**Successfully built a SonarQube server.**
 
 **Useful Links to guide you better:**
 
@@ -144,9 +144,9 @@ To establish the DBeaver PostgreSQL connection, you’ll need to download the Po
 
 **Follow the below-mentioned steps to establish the DBeaver PostgreSQL connection.**
 * [Step 1: Install DBeaver Community Edition](#install-dbeaver-community-edition)
-* [Step 2: Download PostgreSQL JDBC Driver]
-* [Step 3: Create a Connection to PostgreSQL Data]
-* [Step 4: Query Data]
+* [Step 2: Download PostgreSQL JDBC Driver](#download-postgresql-jdbc-driver)
+* [Step 3: Create a Connection to PostgreSQL Data](#create-a-connection-to-postgresql-data)
+* [Step 4: Query Data](#query-data)
 
 ## **Install DBeaver Community Edition**
 
