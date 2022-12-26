@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   orangehrm:
     image: orangehrm/orangehrm
@@ -22,7 +21,7 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - orangehrm-db:/var/lib/mysql
+      - orangehrm-db2:/var/lib/mysql
 
 volumes:
-  orangehrm-db:
+  orangehrm-db2:

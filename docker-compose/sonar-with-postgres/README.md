@@ -100,9 +100,9 @@ volumes:
   postgres_data:
   ```
 ***
-### **4. Now execute the compose file using Docker compose command:**
+### **4 . Now execute the compose file using Docker compose command:**
 
-**`docker-compose up -d`**
+**`docker-compose up`**
 
 ![docker-compose up](images/docker-composeup.png)
 ***
