@@ -1,4 +1,8 @@
 version: '3.7'
+<<<<<<< HEAD
+=======
+
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
 services:
   sonarqube:
     image: sonarqube:latest

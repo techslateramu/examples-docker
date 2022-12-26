@@ -1,4 +1,8 @@
 version: '3'
+<<<<<<< HEAD
+=======
+
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
 services:
   orangehrm:
     image: orangehrm/orangehrm
@@ -21,7 +25,14 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     volumes:
+<<<<<<< HEAD
       - orangehrm-db2:/var/lib/mysql
 
 volumes:
   orangehrm-db2:
+=======
+      - orangehrm-db:/var/lib/mysql
+
+volumes:
+  orangehrm-db:
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580

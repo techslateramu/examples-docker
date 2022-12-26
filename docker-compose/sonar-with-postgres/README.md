@@ -73,7 +73,10 @@ services:
       - 9000:9000
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
+<<<<<<< HEAD
       
+=======
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
     volumes:
@@ -81,7 +84,10 @@ services:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+<<<<<<< HEAD
     command: ["./bin/run.sh"]
+=======
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
 
   db:
     image: postgres:latest
@@ -100,9 +106,15 @@ volumes:
   postgres_data:
   ```
 ***
+<<<<<<< HEAD
 ### **4 . Now execute the compose file using Docker compose command:**
 
 **`docker-compose up`**
+=======
+### **4. Now execute the compose file using Docker compose command:**
+
+**`docker-compose up -d`**
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
 
 ![docker-compose up](images/docker-composeup.png)
 ***
@@ -216,4 +228,8 @@ To establish the DBeaver PostgreSQL connection, you’ll need to download the Po
 ![dbeaver](images/viewdata.png)
 
 ###
+<<<<<<< HEAD
 * **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
+=======
+* **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
+>>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
