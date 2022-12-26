@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   orangehrm:
     image: orangehrm/orangehrm
