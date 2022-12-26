@@ -74,9 +74,12 @@ services:
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
 <<<<<<< HEAD
+<<<<<<< HEAD
       
 =======
 >>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
+=======
+>>>>>>> f43084a3686aa4f19940160f7d4934a2f749fede
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
     volumes:
@@ -85,9 +88,12 @@ services:
       - sonarqube_extensions:/opt/sonarqube/extensions
       - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
 <<<<<<< HEAD
+<<<<<<< HEAD
     command: ["./bin/run.sh"]
 =======
 >>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
+=======
+>>>>>>> f43084a3686aa4f19940160f7d4934a2f749fede
 
   db:
     image: postgres:latest
@@ -229,7 +235,11 @@ To establish the DBeaver PostgreSQL connection, you’ll need to download the Po
 
 ###
 <<<<<<< HEAD
+<<<<<<< HEAD
 * **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
 =======
 * **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
 >>>>>>> cdcbf7dda9c532205917c1e094385c22ae019580
+=======
+* **That’s it, this is how you can get started with a DBeaver PostgreSQL connection, as simple as that.**
+>>>>>>> f43084a3686aa4f19940160f7d4934a2f749fede
