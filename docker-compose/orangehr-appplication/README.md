@@ -64,9 +64,9 @@ Docker compose is a tool developed to define and share multi-container applicati
 
 * **Docker:** Docker is a containerization platform that allows you to run applications in lightweight, isolated environments called containers. You will need to have Docker installed on your machine to use docker-compose.
 
-* **Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. You will use Docker Compose to set up and run the SonarQube and Postgres containers.
+* **Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. You will use Docker Compose to set up and run the OrangeHRM and Mysql containers.
 
-* **A text editor:** You will need a text editor to create and edit the docker-compose.yml file that defines the configuration for your SonarQube and Postgres containers. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
+* **A text editor:** You will need a text editor to create and edit the docker-compose.yml file that defines the configuration for your OrangeHRM and Mysql containers. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
 
 * **Create a new directory for your Orange HRM project and navigate to it.**
 
@@ -131,7 +131,7 @@ volumes:
 ***
 ### **5. List the running containers.** 
 
-docker ps command to list the running containers, as we can see both SonarQube and postgreSQL containers are running.
+docker ps command to list the running containers, as we can see both OrangeHRM and Mysql  containers are running.
 
 **`docker ps`**
 
@@ -142,97 +142,97 @@ docker ps command to list the running containers, as we can see both SonarQube a
 
 **`docker-compose logs`**
 
-![docker-compose logs](images\dockerlogs.png)
+![docker-compose logs](images/dockerlogs.png)
 
 **Now open in your browser http://localhost:80 .**
 ***
 
 ### **7. Now you should see OrangeHRM Welcome page on your screen**
 
-![Orange hrm](images\mainpage.png)
+![Orange hrm](images/mainpage.png)
 
 ### **8. Proceed further by accepting the terms in the License Agreement**
 
-![Orange hrm](images\license.png)
+![Orange hrm](images/license.png)
 
 ### **9.Fill the Database Configuration page , with correct credentials**
 
-![Orange hrm](images\databaseconfig.png)
+![Orange hrm](images/databaseconfig.png)
 
 ### **10.Click on Next.**
 
-![Orange hrm](images\Systemcheck.png)
+![Orange hrm](images/Systemcheck.png)
 
 ### **11.Fill in your organization details here.**
 
-![Orange hrm](images\Instancecreation.png)
+![Orange hrm](images/Instancecreation.png)
 
 
 ### **12. Select the name, email address, username & password to create the admin user for your OrangeHRM.**
 
-![Orange hrm](images\adminuser.png)
+![Orange hrm](images/adminuser.png)
 
 ### **13. Click on Install for installing OrangeHRM**
 
-![Orange hrm](images\Confirmation.png)
+![Orange hrm](images/confirmation.png)
 
 ### **14. Click on Next**
 
-![Orange hrm](images\Installation.png)
+![Orange hrm](images/Installation.png)
 
 ### **15.Successfully installed OrangeHRM and you can see the dashboard appearing on your screen.**
 
-![Orange hrm](images\Dashboard.png)
+![Orange hrm](images/Dashboard.png)
 
 ### **16.Lets create one user and try to connect with Database Tool.**
 
-![Orange hrm](images\user.png)
+![Orange hrm](images/user.png)
 
 ### **17. Fill in the Details.**
 
-![Orange hrm](images\adduser.png)
+![Orange hrm](images/adduser.png)
 
 ### **18. Users are been created , as you can see under the record.**
 
-![Orange hrm](images\usercreated.png)
+![Orange hrm](images/usercreated.png)
 
 ### **19. Now will connect to one of the database tool and see the record there. Lets take Dbeaver as a Database Tool.**
 
-![Orange hrm](images\usercreated.png)
+![Orange hrm](images/usercreated.png)
 
 ### **20. TO download Dbeaver software , please click on this link (https://dbeaver.io/download/)**
 
-![Orange hrm](images\dbeaverdownload.png)
+![Orange hrm](images/dbeaverdownload.png)
 
 ### **21. Once you are done with installation, when you open the dbeaver , you can see the main page..First create a project under that.**
 
-![Orange hrm](images\dbeaverproject.png)
+![Orange hrm](images/dbeaverproject.png)
 
 ### **22. Once you create project. Select your project , click on Databse on top bar and select New Databse Connection.**
 
-![Orange hrm](images\connection.png)
+![Orange hrm](images/connection.png)
 
 ### **23.Select the Database which you want to connect with. In this case , its Mysql**
 
-![Orange hrm](images\selectdatabse.png)
+![Orange hrm](images/selectdatabse.png)
 
 ### **24.Enter the Username and password of your database. Click on Test Connection**
 
-![Orange hrm](images\connectdatabse.png)
+![Orange hrm](images/connectdatabse.png)
 
 ### **25.Succesfully connected to the Database**
 
-![Orange hrm](images\finished.png)
+![Orange hrm](images/finished.png)
 
 ### **26.Click on your Database and you can see Tables and number of things are listed down**
 
-![Orange hrm](images\list.png)
+![Orange hrm](images/list.png)
 
 
 ### **27.As we have created users in the application previously.. lets check it here !**
 
-![Orange hrm](images\list.png)
+![Orange hrm](images/list.png)
 
 ### **28.Users which are created can be seen here. **
 
-![Orange hrm](images\usersondatabse.png)
+![Orange hrm](images/usersondatabse.png)

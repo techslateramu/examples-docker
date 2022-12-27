@@ -136,13 +136,13 @@ docker ps command to list the running containers, as we can see both SonarQube a
 
 **`docker-compose logs`**
 
-![docker-compose logs](images\logs.png)
+![docker-compose logs](images/logs.png)
 
 **Now open in your browser http://localhost:9000 and login to our default admin account.**
 ***
 ### **7. Use the default credentials admin:admin to login.**
 
-![Sonar Login](images\Sonarlogin.png)
+![Sonar Login](images/Sonarlogin.png)
 
 
 **Successfully built a SonarQube server.**
