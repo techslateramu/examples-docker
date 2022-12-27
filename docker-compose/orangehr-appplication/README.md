@@ -64,9 +64,9 @@ Docker compose is a tool developed to define and share multi-container applicati
 
 * **Docker:** Docker is a containerization platform that allows you to run applications in lightweight, isolated environments called containers. You will need to have Docker installed on your machine to use docker-compose.
 
-* **Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. You will use Docker Compose to set up and run the SonarQube and Postgres containers.
+* **Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. You will use Docker Compose to set up and run the OrangeHRM and Mysql containers.
 
-* **A text editor:** You will need a text editor to create and edit the docker-compose.yml file that defines the configuration for your SonarQube and Postgres containers. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
+* **A text editor:** You will need a text editor to create and edit the docker-compose.yml file that defines the configuration for your OrangeHRM and Mysql containers. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
 
 * **Create a new directory for your Orange HRM project and navigate to it.**
 
@@ -131,7 +131,7 @@ volumes:
 ***
 ### **5. List the running containers.** 
 
-docker ps command to list the running containers, as we can see both SonarQube and postgreSQL containers are running.
+docker ps command to list the running containers, as we can see both OrangeHRM and Mysql  containers are running.
 
 **`docker ps`**
 
@@ -174,7 +174,7 @@ docker ps command to list the running containers, as we can see both SonarQube a
 
 ### **13. Click on Install for installing OrangeHRM**
 
-![Orange hrm](images\Confirmation.png)
+![Orange hrm](images\confirmation.png)
 
 ### **14. Click on Next**
 
