@@ -127,36 +127,36 @@ docker ps command to list the running containers, as we can see both grafana and
 ***
 ### **6. Use the default credentials admin:admin to login.**
 
-![Grafana Login](images\grafanalogin.png)
+![Grafana Login](images/grafanalogin.png)
 
 ## **To add Prometheus as a data source for Grafana, follow these steps:**
 
 *  ### Log in to Grafana and click the gear icon in the left sidebar to go to the Configuration page. ###
 
-![Grafana Login](images\gear.png)
+![Grafana Login](images/gear.png)
 
 * ### Click the "Data Sources" menu item. ###
 
-![Grafana Login](images\datasources.png)
+![Grafana Login](images/datasources.png)
 
 * ### Click the "Add data source" button. ###
 
-![Grafana Login](images\adddatasource.png)
+![Grafana Login](images/adddatasource.png)
 
 
 * ### Select "Prometheus" as the type. ###
 
-![Grafana Login](images\prometheus.png)
+![Grafana Login](images/prometheus.png)
 
 * ### In the "URL" field, enter the URL of the Prometheus server, which is http://prometheus:9090 if you are using the docker-compose.yml file above. ###
 
-![Grafana Login](images\URL.png)
+![Grafana Login](images/URL.png)
 
 * ### Click the "Save & Test" button to save the data source and test the connection. ###
 
-![Grafana Login](images\save&test.png)
+![Grafana Login](images/save&test.png)
 
 
 ## You should now be able to use Prometheus as a data source for your Grafana dashboards. ##
 
-![Grafana Login](images\dashboards.png)
+![Grafana Login](images/dashboards.png)
