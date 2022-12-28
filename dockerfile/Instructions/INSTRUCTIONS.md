@@ -1,8 +1,10 @@
+#Introduction
+
 A Dockerfile is a text file that contains instructions for building a Docker image. Here are the instructions that can be used in a Dockerfile:
 
-FROM: Specifies the base image for the Docker image.
-RUN: Executes a command in the Docker image.
-CMD: Specifies the default command to run when the Docker container is started.
+##FROM: Specifies the base image for the Docker image.
+#RUN: Executes a command in the Docker image.
+#CMD: Specifies the default command to run when the Docker container is started.
 LABEL: Adds metadata to the Docker image in the form of key-value pairs.
 EXPOSE: Exposes a port on the Docker container.
 ENV: Sets an environment variable in the Docker image.
